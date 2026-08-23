@@ -85,7 +85,14 @@ hr { border: 0; border-top: .5px solid var(--line); margin: 3rem 0; }
   padding: 2rem 1.5rem;
   text-align: center;
 }
-.app svg { display: block; margin: 0 auto 1.25rem; }
+.app .icon {
+  display: block;
+  margin: 0 auto 1.25rem;
+  width: 96px;
+  height: 96px;
+  /* Eckenradius wie auf dem Homescreen: knapp 22,5 % der Kantenlänge */
+  border-radius: 22px;
+}
 .app h3 { margin: 0 0 .4rem; font-size: 1.0625rem; }
 .app p { color: var(--dim); font-size: .9375rem; margin: 0; }
 
