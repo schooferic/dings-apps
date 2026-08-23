@@ -113,7 +113,7 @@ hr { border: 0; border-top: .5px solid var(--line); margin: 3rem 0; }
   color: var(--dim);
   font-size: .9375rem;
 }
-.slogan svg { vertical-align: -.1em; margin-left: .35rem; }
+.slogan svg { vertical-align: -.1em; margin-left: .4rem; }
 
 nav {
   margin-top: 3rem;
