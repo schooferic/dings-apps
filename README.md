@@ -4,39 +4,26 @@ Statische Seiten für GitHub Pages: Startseite, Datenschutzerklärung und Suppor
 jeweils auf Deutsch und Englisch. App Store Connect verlangt eine Datenschutz-URL
 und eine Support-URL; beides wird von hier bedient.
 
-## Veröffentlichen
+## Veröffentlicht
 
-1. Auf GitHub ein öffentliches Repository namens `dings-apps` anlegen.
-2. Den Inhalt dieses Ordners hineinkopieren und pushen:
+Dieses Verzeichnis **ist** das Repository `schooferic/dings-apps`; die Seiten
+liegen live unter https://schooferic.github.io/dings-apps/.
 
-   ```bash
-   git init && git add . && git commit -m "Website"
-   git branch -M main
-   git remote add origin https://github.com/schooferic/dings-apps.git
-   git push -u origin main
-   ```
-
-3. Im Repository unter *Settings → Pages* als Quelle `main` / `/ (root)` wählen.
-
-Die Seiten sind danach erreichbar unter:
-
-| Zweck                     | URL                                                    |
-|---------------------------|--------------------------------------------------------|
-| Marketing-URL             | `https://<benutzername>.github.io/dings-apps/`          |
-| Datenschutz (DE)          | `https://<benutzername>.github.io/dings-apps/datenschutz/` |
-| Datenschutz (EN)          | `https://<benutzername>.github.io/dings-apps/privacy/`  |
-| Support (DE)              | `https://<benutzername>.github.io/dings-apps/support/`  |
-| Support (EN)              | `https://<benutzername>.github.io/dings-apps/support-en/` |
-
-## Wenn dein Benutzername nicht `ericschoof` ist
-
-Die Pfade in den Seiten sind auf ein Repository namens `dings-apps` ausgelegt und
-funktionieren mit jedem Benutzernamen. Nur die Dateien unter `AppStore/metadata/`
-enthalten die vollständigen URLs – dort den Benutzernamen anpassen:
+Änderungen veröffentlichst du von hier aus:
 
 ```bash
-grep -rl "schooferic.github.io" ../metadata | xargs sed -i '' 's/ericschoof/<benutzername>/g'
+git add -A && git commit -m "..." && git push
 ```
+
+GitHub Pages baut danach automatisch neu, das dauert etwa eine Minute.
+
+| Zweck                     | URL                                                        |
+|---------------------------|------------------------------------------------------------|
+| Marketing-URL             | https://schooferic.github.io/dings-apps/                    |
+| Datenschutz (DE)          | https://schooferic.github.io/dings-apps/datenschutz/        |
+| Datenschutz (EN)          | https://schooferic.github.io/dings-apps/privacy/            |
+| Support (DE)              | https://schooferic.github.io/dings-apps/support/            |
+| Support (EN)              | https://schooferic.github.io/dings-apps/support-en/         |
 
 ## Bei eigener Domain
 
