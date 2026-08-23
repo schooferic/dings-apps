@@ -125,20 +125,19 @@ hr { border: 0; border-top: .5px solid var(--line); margin: 3rem 0; }
 nav {
   margin-top: 3rem;
   padding-top: 1.5rem;
+  padding-bottom: 1rem;
   border-top: .5px solid var(--line);
   font-size: .875rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  align-items: baseline;
+  gap: .5rem 1.25rem;
 }
 nav a { color: var(--faint); border-bottom: 0; }
 nav a:hover { color: var(--fg); }
+/* Name rechtsbündig auf derselben Zeile wie die übrigen Verweise */
+nav .me { margin-left: auto; }
 
-footer {
-  margin-top: 2rem;
-  color: var(--faint);
-  font-size: .8125rem;
-}
 
 @media (max-width: 30rem) {
   .hero { padding: 3.5rem 0 3rem; }
