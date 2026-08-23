@@ -19,7 +19,8 @@ GitHub Pages baut danach automatisch neu, das dauert etwa eine Minute.
 
 | Zweck                     | URL                                                        |
 |---------------------------|------------------------------------------------------------|
-| Marketing-URL             | https://schooferic.github.io/dings-apps/                    |
+| Marketing-URL (DE)        | https://schooferic.github.io/dings-apps/                    |
+| Startseite (EN)           | https://schooferic.github.io/dings-apps/en/                 |
 | Datenschutz (DE)          | https://schooferic.github.io/dings-apps/datenschutz/        |
 | Datenschutz (EN)          | https://schooferic.github.io/dings-apps/privacy/            |
 | Support (DE)              | https://schooferic.github.io/dings-apps/support/            |
